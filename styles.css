@@ -1,34 +1,37 @@
 /* Language button styling */
 .lang-btn {
-        position: absolute;
-        top: 1.5rem;
-        right: 2rem;
-        z-index: 100;
-        background: #222;
-        color: #fff;
-        border: none;
-        border-radius: 2rem;
-        padding: 0.5rem 1.2rem;
-        font-size: 1rem;
-        font-weight: 600;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        cursor: pointer;
-        transition: background 0.2s, color 0.2s;
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    z-index: 100;
+    background: #222;
+    color: #fff;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
 }
+
 .lang-btn:hover {
-        background: #fff;
-        color: #222;
-        border: 1px solid #222;
+    background: #fff;
+    color: #222;
+    border: 1px solid #222;
 }
+
 @media (max-width: 900px) {
     .lang-btn {
         position: fixed;
         top: 1rem;
         right: 1rem;
         z-index: 1000;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
     }
 }
+
 /* TECHNICAL SKILLS SECTION */
 #technical-skills {
     padding-top: 4vh;
@@ -53,7 +56,7 @@
 .skills-category {
     background: #fff;
     border-radius: 1rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     padding: 1.5rem 2rem;
     min-width: 260px;
     max-width: 350px;
@@ -72,6 +75,7 @@
     font-size: 1rem;
     line-height: 1.5;
 }
+
 /* GENERAL */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
@@ -247,7 +251,7 @@ section {
 #imgprofile {
     height: 20rem;
     width: 20rem;
-    border-radius: 50%; /* Make sure profile pic is a circle */
+    border-radius: 50%;
 }
 
 .section__pic-container {
@@ -353,16 +357,18 @@ section {
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    display: flex; /* Ensure this is flex to align children */
+    display: flex;
 }
 
 .about-details-container {
     justify-content: center;
     flex-direction: column;
 }
+
 .text-container {
     font-size: 22px;
 }
+
 .details-container {
     padding: 1.5rem;
     flex: 1;
@@ -413,20 +419,21 @@ section {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2.5rem;
-    justify-content: flex-start; /* Aligned to the start */
+    justify-content: flex-start;
+    /* Aligned to the start */
 }
 
 /* This is the main style for the experience points */
 article {
     display: flex;
-    width: 100%; /* Each article takes full width of container */
+    width: 100%;
     gap: 1rem;
     align-items: center;
 }
 
 article .icon {
     cursor: default;
-    height: 1.5rem; /* Slightly smaller icon for a cleaner look */
+    height: 1.5rem;
 }
 
 /* PROJECTS SECTION */
@@ -509,13 +516,13 @@ footer p {
 }
 
 .certificate-container {
-    flex-direction: column; /* This stacks the certificates vertically */
-    align-items: flex-start; /* This aligns them to the left */
-    gap: 1.5rem;             /* This adds space between each certificate entry */
-    padding: 0 1rem;         /* This adds some space on the sides */
-    width: 100%;             /* Ensures the container uses the full width */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 0 1rem;
+    width: 100%;
     display: flex;
-    margin-bottom: 2.5rem; /* Add separation from the button below */
+    margin-bottom: 2.5rem;
 }
 
 .certificate-container article {
@@ -525,7 +532,7 @@ footer p {
     align-items: center;
     background: #fff;
     border-radius: 1rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     overflow: hidden;
     min-height: 120px;
 }
@@ -543,13 +550,14 @@ footer p {
     background: none;
 }
 
-.certificate-container article > div {
+.certificate-container article>div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
 }
-.certificate-container article > div h3 {
+
+.certificate-container article>div h3 {
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
 }
