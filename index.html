@@ -10,19 +10,22 @@
 </head>
 
 <body>
-    <nav id="desktop-nav">
+    <nav id="desktop-nav" style="position:relative;">
         <div class="logo">
             Nicolás del Rio
         </div>
         <div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#technical-skills">Technical Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" data-en="About" data-es="Sobre mí">About</a></li>
+                <li><a href="#experience" data-en="Experience" data-es="Experiencia">Experience</a></li>
+                <li><a href="#technical-skills" data-en="Technical Skills" data-es="Habilidades Técnicas">Technical
+                        Skills</a></li>
+                <li><a href="#projects" data-en="Projects" data-es="Proyectos">Projects</a></li>
+                <li><a href="#contact" data-en="Contact" data-es="Contacto">Contact</a></li>
             </ul>
         </div>
+    </nav>
+    <button id="lang-swap" class="lang-btn" aria-label="Cambiar idioma">ES</button>
     </nav>
     <nav id="hamburger-nav">
         <div class="logo"> Nicolas del Rio</div>
@@ -33,11 +36,13 @@
                 <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#technical-skills" onclick="toggleMenu()">Technical Skills</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="#about" onclick="toggleMenu()" data-en="About" data-es="Sobre mí">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()" data-en="Experience"
+                        data-es="Experiencia">Experience</a></li>
+                <li><a href="#technical-skills" onclick="toggleMenu()" data-en="Technical Skills"
+                        data-es="Habilidades Técnicas">Technical Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()" data-en="Projects" data-es="Proyectos">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()" data-en="Contact" data-es="Contacto">Contact</a></li>
             </div>
         </div>
     </nav>
@@ -46,16 +51,16 @@
             <img id="imgprofile" src="./assets/profile-pic.png" alt="Nicolas del Rio profile picture">
         </div>
         <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
+            <p class="section__text__p1" data-en="Hello, I'm" data-es="Hola, soy">Hello, I'm</p>
             <h1 class="title">Nicolás del Rio</h1>
-            <p class="section__text__p2">Continuous Improvement Intern | Software Engineering Student</p>
+            <p class="section__text__p2" data-en="Continuous Improvement Intern | Software Engineering Student"
+                data-es="Pasante en Mejora Continua | Estudiante de Ingeniería de Software">Continuous Improvement
+                Intern | Software Engineering Student</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Resume Nicolás del Rio.pdf')">
-                    Download CV
-                </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                    Contact Info
-                </button>
+                <button class="btn btn-color-2" onclick="window.open('./assets/Resume Nicolás del Rio.pdf')"
+                    data-en="Download Resume" data-es="Descargar CV">Download Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'" data-en="Contact Info"
+                    data-es="Contacto">Contact Info</button>
             </div>
             <div id="socials-container">
                 <img src="./assets/linkedin.png" alt="My Linkedin profile" class="icon"
@@ -66,8 +71,8 @@
         </div>
     </section>
     <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
+        <p class="section__text__p1" data-en="Get To Know More" data-es="Conoce Más Sobre Mí">Get To Know More</p>
+        <h1 class="title" data-en="About Me" data-es="Sobre mí">About Me</h1>
         <div class="section-container">
             <div class="section__pic-container">
                 <img src="./assets/about-pic.jpeg" alt="Profile picture" class="about-pic" />
@@ -76,19 +81,27 @@
                 <div class="about-containers">
                     <div class="details-container">
                         <img src="./assets/experience.png" alt="Experience icon" class="icon-np" />
-                        <h3>Experience</h3>
-                        <p>Continuous Improvement Intern at Adecco <br /> <br> <br>Freelance - Full-Stack Web Developer</p>
+                        <h3 data-en="Experience" data-es="Experiencia">Experience</h3>
+                        <p data-en="Continuous Improvement Intern at Adecco <br /> <br> <br>Full-Stack Web Developer - Freelance"
+                            data-es="Practicante de Mejora Continua en Adecco <br /> <br> <br>Desarrollador Full-Stack - Freelance">
+                            Continuous Improvement Intern at Adecco <br /> <br> <br>Full-Stack Web Developer - Freelance
+                        </p>
                     </div>
                     <div class="details-container">
                         <img src="./assets/education.png" alt="Education icon" class="icon-np" />
-                        <h3>Education</h3>
-                        <p>B.S. in Software Engineering at USAL (In progress)</p>
+                        <h3 data-en="Education" data-es="Educación">Education</h3>
+                        <p data-en="B.S. in Software Engineering at USAL (In progress)"
+                            data-es="Licenciatura en Ingeniería de Software en USAL (En curso)">B.S. in Software
+                            Engineering at USAL (In progress)</p>
                         <br>
-                        <p>Graduated at ITISJT with the Technical High School Degree as a Computer Technician </p>
+                        <p data-en="Graduated at ITISJT with the Technical High School Degree as a Computer Technician"
+                            data-es="Graduado en ITISJT con título de Técnico en Computación">Graduated at ITISJT with
+                            the Technical High School Degree as a Computer Technician</p>
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>
+                    <p data-en="As a <b>Continuous Improvement Intern at Adecco</b> and a Software Engineering student, I merge my passion for process optimization with a strong background in full-stack development. I have hands-on experience in <b>Agile project management</b>, process automation, and building data-driven applications with technologies like React.js and Firebase."
+                        data-es="Como <b>Practicante de Mejora Continua en Adecco</b> y estudiante de Ingeniería de Software, combino mi pasión por la optimización de procesos con una sólida experiencia en desarrollo full-stack. Tengo experiencia práctica en <b>gestión ágil de proyectos</b>, automatización de procesos y construcción de aplicaciones basadas en datos con tecnologías como React.js y Firebase.">
                         As a <b>Continuous Improvement Intern at Adecco</b> and a Software Engineering student, I merge
                         my passion for process optimization with a strong background in full-stack development. I have
                         hands-on experience in <b>Agile project management</b>, process automation, and building
@@ -100,72 +113,72 @@
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
     </section>
     <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
+        <p class="section__text__p1" data-en="Explore My" data-es="Explora Mi">Explore My</p>
+        <h1 class="title" data-en="Experience" data-es="Experiencia">Experience</h1>
         <div class="experience-details-container">
             <div class="about-containers">
                 <div class="details-containers">
-                    <h2 class="experience-sub-title">Continuous Improvement Intern</h2>
+                    <h2 class="experience-sub-title" data-en="Continuous Improvement Intern at Adecco" data-es="Pasante de Mejora Continua en Adecco">Continuous Improvement Intern at Adecco</h2>
                     <div class="article-container">
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
-                                <h3>KPI Analysis</h3>
-                                <p>Identified process bottlenecks to improve workflow efficiency.</p>
+                                <h3 data-en="KPI Analysis" data-es="Análisis de KPIs">KPI Analysis</h3>
+                                <p data-en="Identified process bottlenecks to improve workflow efficiency." data-es="Identifiqué cuellos de botella en los procesos para mejorar la eficiencia del flujo de trabajo.">Identified process bottlenecks to improve workflow efficiency.</p>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
-                                <h3>Process Automation</h3>
-                                <p>Deployed workflows with Power Automate & n8n to reduce manual tasks.</p>
+                                <h3 data-en="Process Automation" data-es="Automatización de Procesos">Process Automation</h3>
+                                <p data-en="Deployed workflows with Power Automate & n8n to reduce manual tasks." data-es="Implementé flujos de trabajo con Power Automate y n8n para reducir tareas manuales.">Deployed workflows with Power Automate & n8n to reduce manual tasks.</p>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
-                                <h3>Data-Driven Analysis</h3>
-                                <p>Supported strategic decision-making with data analysis.</p>
+                                <h3 data-en="Data-Driven Analysis" data-es="Análisis Basado en Datos">Data-Driven Analysis</h3>
+                                <p data-en="Supported strategic decision-making with data analysis." data-es="Apoyé la toma de decisiones estratégicas mediante análisis de datos.">Supported strategic decision-making with data analysis.</p>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
-                                <h3>Procedure Standardization</h3>
-                                <p>Documented processes to ensure consistency and quality.</p>
+                                <h3 data-en="Procedure Standardization" data-es="Estandarización de Procedimientos">Procedure Standardization</h3>
+                                <p data-en="Documented processes to ensure consistency and quality." data-es="Documenté procesos para asegurar consistencia y calidad.">Documented processes to ensure consistency and quality.</p>
                             </div>
                         </article>
                     </div>
                 </div>
                 <div class="details-containers">
-                    <h2 class="experience-sub-title">Full-Stack Web Developer</h2>
+                    <h2 class="experience-sub-title" data-en="Full-Stack Web Developer freelance" data-es="Desarrollador Full-Stack freelance">Full-Stack Web Developer freelance</h2>
                     <div class="article-container">
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
-                                <h3>React.js & Next.js</h3>
-                                <p>Led front-end development for a real estate platform.</p>
+                                <h3 data-en="React.js & Next.js" data-es="React.js & Next.js">React.js & Next.js</h3>
+                                <p data-en="Led front-end development for a real estate platform." data-es="Lideré el desarrollo front-end para una plataforma inmobiliaria.">Led front-end development for a real estate platform.</p>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
-                                <h3>Firebase Integration</h3>
-                                <p>Implemented user authentication and real-time data management.</p>
+                                <h3 data-en="Firebase Integration" data-es="Integración con Firebase">Firebase Integration</h3>
+                                <p data-en="Implemented user authentication and real-time data management." data-es="Implementé autenticación de usuarios y gestión de datos en tiempo real.">Implemented user authentication and real-time data management.</p>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
-                                <h3>Agile & Jira</h3>
-                                <p>Managed the complete project lifecycle using JIRA for sprint planning.</p>
+                                <h3 data-en="Agile & Jira" data-es="Agile & Jira">Agile & Jira</h3>
+                                <p data-en="Managed the complete project lifecycle using JIRA for sprint planning." data-es="Gestioné el ciclo completo del proyecto usando JIRA para la planificación de sprints.">Managed the complete project lifecycle using JIRA for sprint planning.</p>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
-                                <h3>UI/UX Design</h3>
-                                <p>Created an intuitive and responsive user interface.</p>
+                                <h3 data-en="UI/UX Design" data-es="Diseño UI/UX">UI/UX Design</h3>
+                                <p data-en="Created an intuitive and responsive user interface." data-es="Creé una interfaz de usuario intuitiva y responsiva.">Created an intuitive and responsive user interface.</p>
                             </div>
                         </article>
                     </div>
@@ -178,8 +191,8 @@
     </section>
 
     <section id="technical-skills">
-        <p class="section__text__p1">Discover My</p>
-        <h1 class="title">Technical Skills</h1>
+        <p class="section__text__p1" data-en="Discover My" data-es="Descubre Mis">Discover My</p>
+        <h1 class="title" data-en="Technical Skills" data-es="Habilidades Técnicas">Technical Skills</h1>
         <div class="skills-container">
             <div class="skills-category">
                 <h3>Programming Languages & Paradigms</h3>
@@ -207,8 +220,10 @@
     </section>
 
     <section id="projects">
-        <p class="section__text__p1">Browse My Recent Work</p>
-        <h1 class="title">Projects & Certificates</h1>
+        <p class="section__text__p1" data-en="Browse My Recent Work" data-es="Mira Mis Trabajos Recientes">Browse My
+            Recent Work</p>
+        <h1 class="title" data-en="Projects & Certificates" data-es="Proyectos y Certificados">Projects & Certificates
+        </h1>
         <div class="experience-details-container">
             <div class="about-containers">
 
@@ -245,7 +260,8 @@
                         </article>
                     </div>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="window.open('#', '_blank')">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://www.linkedin.com/in/nicol%C3%A1s-del-rio-08810523b/details/certifications/', '_blank')">
                             View All
                         </button>
                     </div>
@@ -268,8 +284,8 @@
     </section>
 
     <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
+        <p class="section__text__p1" data-en="Get in Touch" data-es="conectemos">Get in Touch</p>
+        <h1 class="title" data-en="Contact Me" data-es="Contáctame">Contact Me</h1>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
                 <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
@@ -285,15 +301,18 @@
         <nav>
             <div class="nav-links-container">
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#technical-skills">Technical Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about" data-en="About" data-es="Sobre mí">About</a></li>
+                    <li><a href="#experience" data-en="Experience" data-es="Experiencia">Experience</a></li>
+                    <li><a href="#technical-skills" data-en="Technical Skills" data-es="Habilidades Técnicas">Technical
+                            Skills</a></li>
+                    <li><a href="#projects" data-en="Projects" data-es="Proyectos">Projects</a></li>
+                    <li><a href="#contact" data-en="Contact" data-es="Contacto">Contact</a></li>
                 </ul>
             </div>
         </nav>
-        <p>Copyright &#169; 2025 Nicolas del Rio. All Rights Reserved.</p>
+        <p data-en="Copyright &#169; 2025 Nicolas del Rio. All Rights Reserved."
+            data-es="Copyright &#169; 2025 Nicolás del Río. Todos los derechos reservados.">Copyright &#169; 2025
+            Nicolas del Rio. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
