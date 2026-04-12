@@ -351,6 +351,11 @@ section {
 
 #about {
     position: relative;
+    margin-bottom: -1rem;
+}
+
+#about .section-container {
+    justify-content: center;
 }
 
 .about-containers {
